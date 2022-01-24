@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "create-app-react": "^1.0.6"
+    "create-app-react": "^1.0.6",
+    "react-router-dom": "^6.2.1"
   }
 }
