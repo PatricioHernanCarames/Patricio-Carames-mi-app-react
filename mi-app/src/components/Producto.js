@@ -2,7 +2,7 @@ import React from 'react';
 
 function Producto(props) {
     
-  const {producto, onAdd} = props;
+  const {producto, onAdd, onRemove} = props;
 
   return(
   

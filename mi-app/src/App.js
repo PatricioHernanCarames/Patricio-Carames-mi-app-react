@@ -1,4 +1,4 @@
-import Main from './components/Main';
+import ItemListContainer  from './components/itemListContainer';
 import Cart from './components/Cart';
 import Header from './components/Header';
 import datos from './datos';
@@ -29,9 +29,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header countCartItems={CartItems.length} />
       <div className='row'>
-        <Main onAdd={onAdd} productos={productos} />
+        <ItemListContainer onAdd={onAdd} productos={productos} />
         <Cart onAdd={onAdd}onRemove={onRemove} CartItems={CartItems} />
       </div>      
     </div>

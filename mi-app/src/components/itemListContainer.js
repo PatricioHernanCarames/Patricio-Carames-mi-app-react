@@ -1,9 +1,10 @@
 import React from 'react';
+
 import Producto from './Producto';
 
 
-function Main(props ){
-    const {productos, onAdd} = props;
+function ItemListContainer(props ){
+    const {productos, onAdd, } = props;
 
     return(
     <main className='block col-2'>
@@ -12,7 +13,12 @@ function Main(props ){
             {productos.map((producto)=>(
                <Producto key={producto.id} producto={producto} onAdd={onAdd} />
             ))}
+            
+            
+            
              </div>
+                 
     </main>); 
 }
-export default Main;
+
+export default ItemListContainer;
