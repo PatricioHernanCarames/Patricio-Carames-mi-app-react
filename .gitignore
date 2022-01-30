@@ -10,3 +10,5 @@ mi-app/src/components/navbar/navbar.css
 mi-app/src/components/navbar/navbar.css.map
 mi-app/src/components/navbar/Navbar.js
 mi-app/src/components/navbar/navbar.scss
+async&promises/index.html
+async&promises/script.js

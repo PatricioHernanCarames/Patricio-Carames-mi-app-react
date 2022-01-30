@@ -1,10 +1,12 @@
 import React from 'react'; 
+import { BsCart4 } from "react-icons/bs";
 
-function Header(props){
+function Nav(props){
 
     const {countCartItems} = props;
+    
 
-    return( <header className='row block center'>
+    return( <nav className='row block center'>
         <div>
             <a href="#/">   
             <h1>Carrito de compras</ h1>
@@ -15,7 +17,7 @@ function Header(props){
         <div>
                 <a href="#/cart">
                     
-                    Carrito { ' '}
+                    <BsCart4  /> { ' '}
                                
                     
                     
@@ -29,6 +31,6 @@ function Header(props){
                 <a href="#/signIn">Login</a>
                         
         </div>
-    </header>
+    </nav>
 )}
-export default Header;
+export default Nav;

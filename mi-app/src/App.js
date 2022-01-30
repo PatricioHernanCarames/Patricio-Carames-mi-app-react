@@ -1,6 +1,6 @@
 import ItemListContainer  from './components/itemListContainer';
 import Cart from './components/Cart';
-import Header from './components/Header';
+import Nav from './components/Nav';
 import datos from './datos';
 import { useState } from 'react';
  
@@ -29,7 +29,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header countCartItems={CartItems.length} />
+      <Nav countCartItems={CartItems.length} />
       <div className='row'>
         <ItemListContainer onAdd={onAdd} productos={productos} />
         <Cart onAdd={onAdd}onRemove={onRemove} CartItems={CartItems} />
