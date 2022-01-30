@@ -31,7 +31,7 @@ export default function App() {
     <div className="App">
       <Nav countCartItems={CartItems.length} />
       <div className='row'>
-        <ItemListContainer onAdd={onAdd} productos={productos} />
+        <ItemListContainer onAdd={onAdd} onRemove={onRemove} productos={productos} />
         <Cart onAdd={onAdd}onRemove={onRemove} CartItems={CartItems} />
       </div>      
     </div>

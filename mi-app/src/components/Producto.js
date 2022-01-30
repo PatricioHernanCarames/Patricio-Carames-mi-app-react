@@ -2,7 +2,7 @@ import React from 'react';
 
 function Producto(props) {
     
-  const {producto, onAdd, } = props;
+  const {producto, onAdd, onRemove } = props;
 
   return(
   
@@ -15,6 +15,7 @@ function Producto(props) {
         
         <div>
             <button onClick={()=>onAdd(producto)}>Agregar al carrito</button>
+            <button className='elim' onClick={()=>onRemove(producto)}>Eliminar</button>
         </div>
         
   </div>

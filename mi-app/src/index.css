@@ -77,3 +77,6 @@ button.editar{
 .text-right{
   text-align: right;
 }
+.elim{
+  background-color: red;
+}
