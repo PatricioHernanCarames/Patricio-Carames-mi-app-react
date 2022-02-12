@@ -9,16 +9,9 @@ import { useState, useEffect } from 'react';
 export default function App() { 
 
   const [productos, setProductos] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
   
-  useEffect(() => {
-    setIsLoading(true);
-    getDatos()
-    .then((data) => setProductos(data))
-    .catch((error) => console.log(error))
-    .finally(() => setIsLoading(false));
-
-  }, [])
+  
+  
   
   const [CartItems, setCartItems] = useState([]);
   const onAdd = (producto)=>{
