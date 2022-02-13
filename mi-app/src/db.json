@@ -1,0 +1,25 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Pantalon",
+            "precio": 100,
+            "descripción": "una descripción",
+            "imagen": "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjNy7WQ0K3hAhVFyosBHVQeB-kQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F569098160981809852%2F&psig=AOvVaw2qZ_QZ_X_X_X_X_X_X_X&ust=1560798974908766"
+        },
+        {
+            "id": 2,
+            "nombre": "Camisa",
+            "precio": 200,
+            "descripción": "una descripción",
+            "imagen": "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjNy7WQ0K3hAhVFyosBHVQeB-kQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F569098160981809852%2F&psig=AOvVaw2qZ_QZ_X_X_X_X_X_X_X&ust=1560798974908766"
+        },
+        {
+            "id": 3,
+            "nombre": "Zapatos",
+            "precio": 300,
+            "descripción": "una descripción",
+            "imagen": "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjNy7WQ0K3hAhVFyosBHVQeB-kQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F569098160981809852%2F&psig=AOvVaw2qZ_QZ_X_X_X_X_X_X_X&ust=1560798974908766"
+    }
+]
+}

@@ -1,14 +1,23 @@
 import ItemListContainer  from './components/itemListContainer';
 import Cart from './components/Cart';
 import Nav from './components/Nav';
-import {getDatos} from './datos';
+import { getDatos } from './datos';
 import { useState, useEffect } from 'react';
+import ItemDetail from './components/ItemDetail';
 
  
 
 export default function App() { 
 
   const [productos, setProductos] = useState([]);
+  
+  useEffect(() => {
+    
+    getDatos()
+    .then((data) => setProductos(data))
+    .catch((error) => console.log(error));
+
+  }, [])
   
   
   
@@ -43,7 +52,12 @@ export default function App() {
         <ItemListContainer onAdd={onAdd} onRemove={onRemove} productos={productos} />
         <Cart onAdd={onAdd}onRemove={onRemove} CartItems={CartItems} />
 
-      </div> 
+      </div>
+
+      <div>
+        <ItemDetail key={productos.id} producto={productos} />
+      </div>
+      
           
     </div>
   );
